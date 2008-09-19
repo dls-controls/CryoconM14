@@ -1,0 +1,14 @@
+file M14_system.template
+{
+pattern { device,          port}
+        { "TS-ID-TMON-01", "ty_60_0" }
+}
+
+file M14_sensor.template
+{
+pattern { device,       port, sensor, adel, egu, lolo, low, high, hihi}
+        { "TS-ID-TMON-01", "ty_60_0", "A", 0.02, "K", 0,  4,  8, 1000 }
+        { "TS-ID-TMON-01", "ty_60_0", "B", 0.02, "K" ,0, 10, 50, 1000 }
+        { "TS-ID-TMON-01", "ty_60_0", "C", 0.02, "K", 0,  4,  8, 1000 }
+        { "TS-ID-TMON-01", "ty_60_0", "D", 0.02, "K", 0, 10, 50, 1000 }
+}
