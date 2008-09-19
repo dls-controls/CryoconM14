@@ -10,7 +10,7 @@ record(ai, "$(device):$(sensor):RAW") {
   field(DTYP, "stream")
   field(INP, "@M14.protocol sensorraw($(sensor)) $(port)")
 #  field(EGU, "Ohms")
-  field(SCAN, "5 second")
+  field(SCAN, "$(scan) second")
   field(PINI, "YES")
   field(PREC, "3")
 }
@@ -21,7 +21,7 @@ record(ai, "$(device):$(sensor):TEMP") {
   field(DTYP, "stream")
   field(INP, "@M14.protocol temp($(sensor)) $(port)")
   field(EGU, "$(egu)")
-  field(SCAN, "5 second")
+  field(SCAN, "$(scan) second")
   field(PINI, "YES")
   field(ADEL, "$(adel)")
   field(PREC, "3")
@@ -38,4 +38,4 @@ record(ai, "$(device):$(sensor):TEMP") {
 #! Further lines contain data used by VisualDCT
 #! View(0,0,1.0)
 #! Record("$(device):$(sensor):RAW",20,20,0,0,"$(device):$(sensor):RAW")
-#! Record("$(device):$(sensor):TEMP",260,-39,0,0,"$(device):$(sensor):TEMP")
+#! Record("$(device):$(sensor):TEMP",220,21,0,0,"$(device):$(sensor):TEMP")
