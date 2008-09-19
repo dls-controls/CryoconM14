@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 959
-y 192
+x 964
+y 213
 w 313
 h 426
 font "arial-medium-r-18.0"
@@ -305,7 +305,7 @@ x 216
 y 264
 w 88
 h 24
-controlPv "$(device):A:TEMP"
+controlPv "$(device):$(record1)"
 font "arial-bold-r-16.0"
 fontAlign "right"
 fgColor index 16
@@ -330,7 +330,7 @@ x 216
 y 296
 w 88
 h 24
-controlPv "$(device):B:TEMP"
+controlPv "$(device):$(record2)"
 font "arial-bold-r-16.0"
 fontAlign "right"
 fgColor index 16
@@ -355,7 +355,7 @@ x 216
 y 328
 w 88
 h 24
-controlPv "$(device):C:TEMP"
+controlPv "$(device):$(record3)"
 font "arial-bold-r-16.0"
 fontAlign "right"
 fgColor index 16
@@ -380,7 +380,7 @@ x 216
 y 360
 w 88
 h 24
-controlPv "$(device):D:TEMP"
+controlPv "$(device):$(record4)"
 font "arial-bold-r-16.0"
 fontAlign "right"
 fgColor index 16

@@ -16,7 +16,7 @@ record(ai, "$(device):$(sensor):RAW") {
 }
 
 # % archiver 10 Monitor
-record(ai, "$(device):$(sensor):TEMP") {
+record(ai, "$(device):$(record)") {
   field(DESC, "Sensor Temperature")
   field(DTYP, "stream")
   field(INP, "@M14.protocol temp($(sensor)) $(port)")
@@ -38,4 +38,4 @@ record(ai, "$(device):$(sensor):TEMP") {
 #! Further lines contain data used by VisualDCT
 #! View(0,0,1.0)
 #! Record("$(device):$(sensor):RAW",20,20,0,0,"$(device):$(sensor):RAW")
-#! Record("$(device):$(sensor):TEMP",220,21,0,0,"$(device):$(sensor):TEMP")
+#! Record("$(device):$(record)",220,21,0,0,"$(device):$(record)")
