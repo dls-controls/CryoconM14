@@ -23,7 +23,7 @@ EPICS_BASE=/dls_sw/epics/R3.14.8.2/base
 # External module definitions (prod release).
 SUPPORT=/dls_sw/prod/R3.14.8.2/support
 WORK=/dls_sw/work/R3.14.8.2/support
-LOCAL=/home/karb45/epics3.14.8.2
+#LOCAL=/home/karb45/epics3.14.8.2
 
 # Testing
 ASYN=$(SUPPORT)/asyn/4-9
@@ -31,7 +31,7 @@ UTILITY=$(SUPPORT)/utility/dls2-8
 STREAM=$(SUPPORT)/streamDevice/2-3dls6
 IPAC=$(SUPPORT)/ipac/2-8dls4-5
 HY8515=$(SUPPORT)/Hy8515/3-9
-CRYOCONM14=$(LOCAL)/CryoconM14
+CRYOCONM14=$(SUPPORT)/CryoconM14
 
 #Capfast users may need the following definitions
 #CAPFAST_TEMPLATES=
