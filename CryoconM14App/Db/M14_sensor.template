@@ -5,7 +5,7 @@
 #! DBDEND
 
 
-record(ai, "$(device):$(sensor):RAW") {
+record(ai, "$(tmon):$(sensor):RAW") {
   field(DESC, "Raw Sensor Reading")
   field(DTYP, "stream")
   field(INP, "@M14.protocol sensorraw($(sensor)) $(port)")
@@ -37,5 +37,5 @@ record(ai, "$(device):$(record)") {
 
 #! Further lines contain data used by VisualDCT
 #! View(0,0,1.0)
-#! Record("$(device):$(sensor):RAW",20,20,0,0,"$(device):$(sensor):RAW")
+#! Record("$(tmon):$(sensor):RAW",20,20,0,0,"$(tmon):$(sensor):RAW")
 #! Record("$(device):$(record)",220,21,0,0,"$(device):$(record)")
