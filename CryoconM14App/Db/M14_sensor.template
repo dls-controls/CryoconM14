@@ -13,6 +13,7 @@ record(ai, "$(tmon):$(sensor):RAW") {
   field(SCAN, "$(scan) second")
   field(PINI, "YES")
   field(PREC, "3")
+  field(FLNK, "$(device):$(record)")
 }
 
 # % archiver 10 Monitor
@@ -21,7 +22,6 @@ record(ai, "$(device):$(record)") {
   field(DTYP, "stream")
   field(INP, "@M14.protocol temp($(sensor)) $(port)")
   field(EGU, "$(egu)")
-  field(SCAN, "$(scan) second")
   field(PINI, "YES")
   field(ADEL, "$(adel)")
   field(PREC, "3")
@@ -37,5 +37,7 @@ record(ai, "$(device):$(record)") {
 
 #! Further lines contain data used by VisualDCT
 #! View(0,0,1.0)
-#! Record("$(tmon):$(sensor):RAW",20,20,0,0,"$(tmon):$(sensor):RAW")
-#! Record("$(device):$(record)",220,21,0,0,"$(device):$(record)")
+#! Record("$(tmon):$(sensor):RAW",20,6,0,0,"$(tmon):$(sensor):RAW")
+#! Field("$(tmon):$(sensor):RAW.FLNK",16777215,1,"$(tmon):$(sensor):RAW.FLNK")
+#! Link("$(tmon):$(sensor):RAW.FLNK","$(device):$(record)")
+#! Record("$(device):$(record)",280,35,0,0,"$(device):$(record)")
