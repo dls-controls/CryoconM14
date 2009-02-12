@@ -1,0 +1,282 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 385
+y 214
+w 200
+h 200
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "Cryocon M14"
+showGrid
+snapToGrid
+gridSize 8
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 0
+w 200
+h 32
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 3
+value {
+  "$(tmon) Temp. Monitor"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 60
+w 16
+h 24
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "A"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 30
+w 104
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Temperature"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 85
+w 16
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "B"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 110
+w 16
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "C"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 20
+y 135
+w 16
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "D"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 60
+w 88
+h 20
+controlPv "$(device):$(record1)"
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 16
+fgAlarm
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 85
+w 88
+h 20
+controlPv "$(device):$(record2)"
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 16
+fgAlarm
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 110
+w 88
+h 20
+controlPv "$(device):$(record3)"
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 16
+fgAlarm
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 135
+w 88
+h 20
+controlPv "$(device):$(record4)"
+font "arial-bold-r-12.0"
+fontAlign "right"
+fgColor index 16
+fgAlarm
+bgColor index 10
+limitsFromDb
+nullColor index 0
+useHexPrefix
+showUnits
+useAlarmBorder
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 2
+release 0
+x 72
+y 170
+w 72
+h 20
+fgColor index 43
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-12.0"
+buttonLabel "More..."
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "CryoconM14_detail.edl"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 10
+y 30
+w 42
+h 20
+font "arial-bold-r-12.0"
+fgColor index 14
+bgColor index 6
+useDisplayBg
+value {
+  "Sensor"
+}
+endObjectProperties
+
