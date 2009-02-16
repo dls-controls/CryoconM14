@@ -3,8 +3,8 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 385
-y 214
+x 395
+y 258
 w 200
 h 200
 font "arial-medium-r-18.0"
@@ -39,7 +39,8 @@ font "arial-medium-r-16.0"
 fgColor index 14
 bgColor index 3
 value {
-  "$(tmon) Temp. Monitor"
+  "$(tmon)"
+  "Temperature Monitor"
 }
 endObjectProperties
 
@@ -69,7 +70,7 @@ major 4
 minor 1
 release 0
 x 60
-y 30
+y 40
 w 104
 h 20
 font "arial-bold-r-12.0"
@@ -268,7 +269,7 @@ major 4
 minor 1
 release 0
 x 10
-y 30
+y 40
 w 42
 h 20
 font "arial-bold-r-12.0"
