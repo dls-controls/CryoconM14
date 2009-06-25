@@ -3,10 +3,10 @@ beginScreenProperties
 major 4
 minor 0
 release 1
-x 395
-y 258
-w 200
-h 200
+x 116
+y 2014
+w 170
+h 204
 font "arial-medium-r-18.0"
 ctlFont "arial-medium-r-18.0"
 btnFont "arial-medium-r-18.0"
@@ -17,8 +17,8 @@ ctlFgColor1 index 14
 ctlFgColor2 index 0
 ctlBgColor1 index 0
 ctlBgColor2 index 14
-topShadowColor index 0
-botShadowColor index 14
+topShadowColor index 80
+botShadowColor index 80
 title "Cryocon M14"
 showGrid
 snapToGrid
@@ -31,8 +31,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 0
-y 0
+x 8
+y 8
 w 200
 h 32
 font "arial-medium-r-16.0"
@@ -50,8 +50,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 20
-y 60
+x 24
+y 72
 w 16
 h 24
 font "arial-bold-r-12.0"
@@ -69,8 +69,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 60
-y 40
+x 64
+y 48
 w 104
 h 20
 font "arial-bold-r-12.0"
@@ -88,8 +88,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 20
-y 85
+x 24
+y 96
 w 16
 h 20
 font "arial-bold-r-12.0"
@@ -107,8 +107,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 20
-y 110
+x 24
+y 120
 w 16
 h 20
 font "arial-bold-r-12.0"
@@ -126,8 +126,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 20
-y 135
+x 24
+y 144
 w 16
 h 20
 font "arial-bold-r-12.0"
@@ -145,8 +145,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 60
-y 60
+x 64
+y 72
 w 88
 h 20
 controlPv "$(device):$(record1)"
@@ -170,8 +170,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 60
-y 85
+x 64
+y 96
 w 88
 h 20
 controlPv "$(device):$(record2)"
@@ -195,8 +195,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 60
-y 110
+x 64
+y 120
 w 88
 h 20
 controlPv "$(device):$(record3)"
@@ -220,8 +220,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 60
-y 135
+x 64
+y 144
 w 88
 h 20
 controlPv "$(device):$(record4)"
@@ -245,15 +245,15 @@ beginObjectProperties
 major 4
 minor 2
 release 0
-x 72
-y 170
+x 48
+y 176
 w 72
 h 20
 fgColor index 43
 bgColor index 3
 topShadowColor index 0
 botShadowColor index 14
-font "arial-medium-r-12.0"
+font "arial-bold-r-14.0"
 buttonLabel "More..."
 numPvs 4
 numDsps 1
@@ -268,8 +268,8 @@ beginObjectProperties
 major 4
 minor 1
 release 0
-x 10
-y 40
+x 8
+y 48
 w 42
 h 20
 font "arial-bold-r-12.0"
