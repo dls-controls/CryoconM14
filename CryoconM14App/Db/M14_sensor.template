@@ -13,7 +13,7 @@ record(ai, "$(tmon):$(sensor):RAW") {
   field(SCAN, "$(scan) second")
   field(PINI, "YES")
   field(PREC, "3")
-  field(FLNK, "$(device):$(record)")
+  field(FLNK, "$(device):$(record) PP MS")
 }
 
 # % archiver 10 Monitor
