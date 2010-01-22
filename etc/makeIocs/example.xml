@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<components arch="linux-x86">
+	<pyDrv.serial_sim_instance module="CryoconM14_sim" name="CryoconM14sim" pyCls="CryoconM14" rpc="9001"/>
+	<asyn.AsynIP name="asynCryoconM14" port="localhost:8001" simulation="CryoconM14sim"/>
+	<CryoconM14.M14_system port="asynCryoconM14" tmon="SIM-TS-TMON-01"/>
+	<CryoconM14.M14_sensor adel="0.1" device="SIM-TS-TEMP-01" egu="K" gda="False" high="50" hihi="100" lolo="3" low="3.5" port="asynCryoconM14" record="T1" scan="10" sensor="A" tmon="SIM-TS-TMON-01"/>
+	<CryoconM14.M14_sensor adel="0.1" device="SIM-TS-TEMP-01" egu="K" gda="False" high="50" hihi="100" lolo="3" low="3.5" port="asynCryoconM14" record="T2" scan="10" sensor="B" tmon="SIM-TS-TMON-01"/>
+	<CryoconM14.M14_sensor adel="0.1" device="SIM-TS-TEMP-01" egu="K" gda="False" high="50" hihi="100" lolo="3" low="3.5" port="asynCryoconM14" record="T3" scan="10" sensor="C" tmon="SIM-TS-TMON-01"/>
+	<CryoconM14.M14_sensor adel="0.1" device="SIM-TS-TEMP-01" egu="K" gda="False" high="50" hihi="100" lolo="3" low="3.5" port="asynCryoconM14" record="T4" scan="10" sensor="D" tmon="SIM-TS-TMON-01"/>
+</components>

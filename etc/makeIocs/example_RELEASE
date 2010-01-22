@@ -1,0 +1,7 @@
+SUPPORT=/dls_sw/prod/R3.14.8.2/support
+WORK=/dls_sw/work/R3.14.8.2/support
+
+STREAM=$(SUPPORT)/streamDevice/2-4dls2-1
+
+# Place any example specific dependencies here
+PYDRV=          $(SUPPORT)/pyDrv/1-2

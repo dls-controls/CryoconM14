@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<testsuite failures="0" tests="8" time="31.5410139561" timestamp="1264083985.01">
+  <testcase classname="CryoconM14TestSuite" name="CaseGetMac" time="0.055214881897"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseGetIPad" time="0.0560739040375"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseSetDate" time="0.0445261001587"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseSetTime" time="0.0450720787048"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseReseed" time="0.0641138553619"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseGetRaws" time="15.0968670845"/>
+  <testcase classname="CryoconM14TestSuite" name="CaseGetTemps" time="15.0876820087"/>
+  <testcase classname="CryoconM14TestSuite" name="CasePowerOffOn" time="1.09119606018"/>
+</testsuite>

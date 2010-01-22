@@ -47,7 +47,7 @@ record(stringin, "$(tmon):MAC") {
   field(PINI, "YES")
 }
 
-record(stringout, "$(tmon):RESEED") {
+record(bo, "$(tmon):RESEED") {
   field(DESC, "Reseed Ave Filter")
   field(DTYP, "stream")
   field(OUT, "@M14.protocol reseed $(port)")
