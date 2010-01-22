@@ -24,7 +24,7 @@ record(ai, "$(device):$(record)") {
   field(DTYP, "stream")
   field(INP, "@M14.protocol temp($(sensor)) $(port)")
   field(EGU, "$(egu)")
-  field(PINI, "YES")
+#  field(PINI, "YES")
   field(ADEL, "$(adel)")
   field(PREC, "3")
   field(HIHI, "$(hihi)")
